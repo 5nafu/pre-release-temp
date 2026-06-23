@@ -2,5 +2,5 @@ apiVersion: v2
 name: pre-release-temp
 description: An helm chart for cdt infrastructure in an aks cluster...
 type: application
-version: 1.0.0-true.1
-appVersion: 1.0.0-true.1
+version: 1.0.0-test-feature-1.1
+appVersion: 1.0.0-test-feature-1.1
