@@ -76,7 +76,7 @@ module.exports = {
           "chore(release): Bump to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
       },
     ],
-    /*[
+    [
       "@semantic-release/github",
       {
         successComment: false,
@@ -84,6 +84,6 @@ module.exports = {
         labels: false,
         releasedLabels: false,
       },
-    ],*/
+    ],
   ],
 };
