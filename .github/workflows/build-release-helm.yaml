@@ -1,0 +1,48 @@
+name: Build & Release Helm Chart
+
+on:
+  workflow_dispatch:
+    inputs:
+      dryrun: 
+        required: true
+        type: boolean
+        default: true
+  push:
+    branches:
+      - main
+      - feat/*
+    paths:
+      - 'helm/**'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        with:
+          fetch-depth: 0
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release with semantic-release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          semantic_version: ^24
+          dry_run: ${{ inputs.dryrun || 'false' }}
+          extra_plugins: |
+            conventional-changelog-conventionalcommits
+            @semantic-release/changelog
+            semantic-release-helm3
+            @semantic-release/git
+            @semantic-release/exec
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

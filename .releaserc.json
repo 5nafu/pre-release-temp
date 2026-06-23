@@ -50,8 +50,8 @@
       }
     ],
     ["semantic-release-helm3", {
-      "chartPath": "cdt-software",
-      "registry": "ghcr.io/cloudeteer/k8s-cdt-software-chart/charts"
+      "chartPath": "helm",
+      "registry": "ghcr.io/5nafu/charts"
     }],
     [
       "@semantic-release/exec",
@@ -63,7 +63,7 @@
       "@semantic-release/git",
       {
         "assets": [
-          "cdt-software/Chart.yaml",
+          "helm/Chart.yaml",
           "CHANGELOG.md",
           "UPDATES.md"
         ],
