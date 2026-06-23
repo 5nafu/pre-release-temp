@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.0-test-feature-1.2](https://github.com/5nafu/pre-release-temp/compare/v1.0.0-test-feature-1.1...v1.0.0-test-feature-1.2) (2026-06-23)
+
+### 🐛 Bug Fixes
+
+* reactivate github ([ba8673f](https://github.com/5nafu/pre-release-temp/commit/ba8673f31376b3aaaa7c8064f2ffff98880672e6))
+
 ## 1.0.0-test-feature-1.1 (2026-06-23)
 
 ### ✨ Features
