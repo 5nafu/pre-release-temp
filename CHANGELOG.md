@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.0-test-2.1](https://github.com/5nafu/pre-release-temp/compare/v1.1.0...v1.2.0-test-2.1) (2026-06-23)
+
+### ✨ Features
+
+* add another feat branch ([b898dcd](https://github.com/5nafu/pre-release-temp/commit/b898dcdfe391731e8f11f051d338ffd1599374db))
+
 ## [1.1.0](https://github.com/5nafu/pre-release-temp/compare/v1.0.0...v1.1.0) (2026-06-23)
 
 ### ✨ Features
