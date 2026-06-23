@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.0-foobar.1](https://github.com/5nafu/pre-release-temp/compare/v1.1.0...v1.2.0-foobar.1) (2026-06-23)
+
+### ✨ Features
+
+* fizz buzz chart ([1b13954](https://github.com/5nafu/pre-release-temp/commit/1b13954b95524a941625bc51e6a3b3a805a4338e))
+
 ## [1.1.0](https://github.com/5nafu/pre-release-temp/compare/v1.0.0...v1.1.0) (2026-06-23)
 
 ### ✨ Features
